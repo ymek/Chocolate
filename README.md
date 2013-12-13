@@ -1,1 +1,1 @@
-Rails app for an online chocolate store
+Rails app for an online chocolate store.
