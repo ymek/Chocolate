@@ -35,8 +35,8 @@ class LineItemsController < ApplicationController
         format.js { @current_item = @line_item; }
         format.json { render action: 'show', status: :created, location: @line_item; }
       else
-        format.html { render action: 'new'; }
-        format.json { @line_item.errors, status: :unprocessable_entity; render json: }
+        format.html { render action: 'new'}
+        format.json { render json: @line_item.errors, status: :unprocessable_entity}
       end
     end
   end
@@ -46,11 +46,11 @@ class LineItemsController < ApplicationController
   def update
     respond_to do |format|
       if @line_item.update(line_item_params)
-        format.html { @line_item, notice: 'Line item was successfully updated.'; redirect_to }
+        format.html { redirect_to store_url}
         format.json { head :no_content; }
       else
-        format.html { render action: 'edit'; }
-        format.json { @line_item.errors, status: :unprocessable_entity; render json: }
+        format.html { render action: 'edit' }
+        format.json { render json: line_item.errors, status: :unprocessable_entity}
       end
     end
   end
