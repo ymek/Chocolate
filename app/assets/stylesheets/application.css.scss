@@ -11,14 +11,49 @@
  *= require_self
  *= require_tree .
  */
+.store_form {
+  fieldset {
+    background: #e8Adda;
+
+    legend {
+      padding: 0.2em 1em;
+      background: #800080;
+      color: white;
+      font-family: sans-serif;
+    }
+  }
+    
+  form {
+    label {
+      display: block;
+      float: left;
+      margin-right: 0.1em;
+      padding-top: 0.2em;
+      width: 5em;
+      text-align: right;
+    }
+    
+    select, textarea, input {
+      margin-left: 0.5em;
+    }
+
+    .submit {
+      margin-left: 4em;
+    }
+
+    br {
+      display: none;
+    }
+  }
+}
 
 #banner {
-  background: #800080;
   padding: 10px;
   border-bottom: 2px solid;
-  font: small-caps 40px/40px "Monaco", sans-serif;
+  background: #800080;
   color: #D1D0CE;
   text-align: center;
+  font: small-caps 40px/40px "Monaco", sans-serif;
   
   img {
     float: left;
@@ -26,11 +61,11 @@
 }
 
 #notice {
-  color: #000 !important;
-  border: 2px solid red;
-  padding: 1em;
   margin-bottom: 2em;
+  padding: 1em;
+  border: 2px solid red;
   background-color: #f0f0f0;
+  color: #000 !important;
   font: bold smaller sans-serif;
 }
 
@@ -58,13 +93,13 @@
     }
 
     #cart {
-      font-size: smaller;
       color: white;
+      font-size: smaller;
 
       table {
+        margin-bottom: 10px;
         border-top: 1px dotted #595;
         border-bottom: 1px dotted #595;
-        margin-bottom: 10px;
       }
     }    
 
