@@ -2,11 +2,4 @@
   <p id ="notice"><%=notice%></p>
 <%end%>
 
-<h2> Your Chocolate Cart </h2>
-<ul>
-  <% @cart.line_items.each do |item| %>
-    <li><%= item.quantity%>&times; <%=item.product.title %> </li>
-  <%end%>
-</ul>
-<%= button_to 'Empty Cart', @cart, method: :delete,
-    data: {confirm: 'Are you sure?'} %>
+<%= render @cart %>
