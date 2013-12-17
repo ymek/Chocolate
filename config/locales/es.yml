@@ -1,0 +1,9 @@
+es:
+
+  layouts:
+    application:
+      title:  "Fantastica Tienda de Chocolate"
+      home:   "Inicio"
+      questions: "Preguntas"
+      news:     "Noticias"
+      contact:  "Contacto"
