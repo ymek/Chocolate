@@ -6,4 +6,4 @@ one:
 
 two:
   product_id: chocolate 
-  cart_id:one
+  cart_id: one
