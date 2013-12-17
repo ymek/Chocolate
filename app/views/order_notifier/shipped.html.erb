@@ -1,0 +1,10 @@
+<h3> Awesome Chocolates Order Shipped </h3>
+<p>
+  Your recent order has shipped:
+</p>
+
+<table>
+  <tr><th colspan="2">Qty</th><th>Description</th></tr>
+  <%= render @order.line_items -%>
+</table>
+
