@@ -20,6 +20,17 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+
+  carts:
+    cart:
+      title:  "Your Cart"
+      empty:  "Empty Cart"
+      checkout: "Checkout"
+
+  store:
+    index:
+      title_html: "Chocolate Selection"
+      add_html: "Add to Cart"
   
   layouts:
     application:
