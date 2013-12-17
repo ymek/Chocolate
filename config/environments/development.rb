@@ -8,7 +8,7 @@ Store::Application.configure do
     domain:   "gmail.com",
     authentication: "plain",
     user_name: "amirtcheva",
-    password:  "secret"
+    password:  "secret",
     enable_starttls_auto: true
   }
 
