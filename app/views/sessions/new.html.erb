@@ -16,7 +16,12 @@
       </div>
       <div>
         <%= submit_tag "Login" %>
-      </div>
     </fieldset>
   <% end %>
+
+  </div>
+  <div>
+    <p>Don't have an account?
+    <%= button_to 'Create New User', new_user_url, method: :get %></p>
+  </div>
 </div>
